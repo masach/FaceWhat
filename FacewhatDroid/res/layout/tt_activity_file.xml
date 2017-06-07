@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--         android:padding="10dp" > -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnPicture" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/picture" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvPicture" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="图片" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnMusic" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/music" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvMusic" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="音乐" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnVideo" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/video" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvVideo" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="视频" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+<!--     </LinearLayout> -->
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/btnFile" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--         android:padding="10dp" > -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/file" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvFile" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="文件" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnZip" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/zip" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvZip" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="压缩包" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnApplication" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/application" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvApplication" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="应用" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+<!--     </LinearLayout> -->
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--         android:padding="10dp" > -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/btnRecently" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:background="@drawable/recently" -->
+<!--                 android:scaleType="fitXY" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvRecently" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="最近使用" -->
+<!--                 android:textColor="@color/Black" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="vertical" > -->
+<!--         </LinearLayout> -->
+<!--     </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ListView
+            android:id="@+id/fileList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <!--         android:numColumns="auto_fit" ，GridView的列数设置为自动 -->
+<!-- android:columnWidth="90dp"，每列的宽度，也就是Item的宽度 -->
+<!-- android:stretchMode="columnWidth"，缩放与列宽大小同步 -->
+<!-- android:verticalSpacing="10dp"，两行之间的边距，如：行一(NO.0~NO.2)与行二(NO.3~NO.5)间距为10dp -->
+<!-- android:horizontalSpacing="10dp"，两列之间的边距。 -->
+        <GridView
+            android:id="@+id/pictureList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:visibility="gone"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>

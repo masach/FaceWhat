@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contact_default_bk"
+    android:orientation="vertical" >
+
+     <LinearLayout
+        android:id="@+id/tt_fragment_group_layout_show_check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/tt_fragment_group_btn_create_mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createMul" />
+
+        <Button
+            android:id="@+id/tt_fragment_group_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/tt_fragment_group_btn_all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:text="@string/all_select" />
+
+        <Button
+            android:id="@+id/tt_fragment_group_btn_reverse_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:text="@string/reverse_select" />
+        
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tt_fragment_group_my_dept"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/tt_my_dept"
+                android:drawableRight="@drawable/tt_default_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <com.chat.ui.widget.NoScrollListview
+                android:id="@+id/tt_fragment_group_list_my_dept"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:divider="@drawable/tt_divide_line"
+                android:cacheColorHint="@android:color/transparent"
+                android:padding="5dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tt_fragment_group_my_meet"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/tt_my_meet"
+                android:drawableRight="@drawable/tt_default_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <com.chat.ui.widget.NoScrollListview
+                android:id="@+id/tt_fragment_group_list_my_meet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:divider="@drawable/tt_divide_line"
+                android:cacheColorHint="@android:color/transparent"
+                android:padding="5dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tt_fragment_group_company"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/tt_company"
+                android:drawableRight="@drawable/tt_default_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+            <com.chat.ui.widget.NoScrollExpandableListview
+                android:id="@+id/tt_fragment_group_list_my_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                android:cacheColorHint="@android:color/transparent"
+                android:childDivider="@drawable/tt_divide_line"
+                android:divider="@drawable/tt_divide_line"
+                android:groupIndicator="@drawable/tt_drop_select"
+                android:paddingLeft="10dip"
+                android:visibility="gone" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

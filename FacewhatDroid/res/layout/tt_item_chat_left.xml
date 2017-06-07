@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="false" >
+
+    <com.chat.ui.widget.ImageViewCircle
+        android:id="@+id/chat_adapter_item_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="1dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+
+        <!-- Android:includeFontPadding ,用来设置文本框是否包含顶部和底部留白（左右两侧默认没有留白）， -->
+        <!-- 将其设置为false，TextView就会取消2px的留白。这样就避免了TextView导致UI出现差异！ -->
+
+        <TextView
+            android:id="@+id/chat_adapter_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="#ff0033"
+            android:textSize="10dip"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/balloon_l_selector" >
+            
+            <TextView
+                android:id="@+id/chat_adapter_item_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:textColor="#796400"
+                android:textSize="15dip"
+                android:textStyle="normal" />
+            
+            <ImageView
+                android:id="@+id/chat_adapter_item_msg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:clickable="false"/>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <com.chat.ui.widget.ImageViewCircle
+        android:id="@+id/tt_item_find_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tt_login_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp" >
+
+         <TextView
+            android:id="@+id/tt_item_find_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contact_realname_color"
+            android:textSize="17sp" />
+         
+        <TextView
+            android:id="@+id/tt_item_find_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/contact_name_color"
+            android:textSize="12sp" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/tt_item_find_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tt_show_head_toast_bg"
+            android:text="@string/tt_item_find_accept"
+            android:textColor="@color/contact_realname_color"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+        
+         <Button
+            android:id="@+id/tt_item_find_refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt_show_head_toast_bg"
+            android:text="@string/tt_item_find_refuse"
+            android:textColor="@color/contact_realname_color"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+         
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 部门信息 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/tt_activity_user_info_dept_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/default_fragment_bk_color" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/default_fragment_bk_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tt_activity_user_info_dept_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <com.chat.ui.widget.NoScrollListview
+                    android:id="@+id/tt_activity_user_info_dept_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 个人信息 -->
+
+    <LinearLayout
+        android:id="@+id/tt_activity_user_info_person_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/user_detail_base"
+            android:padding="0dp" >
+
+            <com.chat.ui.widget.ImageViewCircle
+                android:id="@+id/tt_activity_user_info_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tt_login_logo" />
+
+            <TextView
+                android:id="@+id/tt_activity_user_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt_activity_user_info_icon"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tt_activity_user_info_jid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tt_activity_user_info_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/default_light_grey_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contact_list_item_bk"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:shrinkColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_activity_user_info_email"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tt_activity_user_info_email"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow
+                android:id="@+id/phoneArea"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_activity_user_info_tel"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tt_activity_user_info_tel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:autoLink="phone"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow
+                android:id="@+id/emailArea"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_activity_user_info_address"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tt_activity_user_info_address"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text=""
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/tt_activity_user_info_send_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="45.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/tt_default_btn_bk"
+            android:text="@string/tt_activity_user_info_send"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tt_activity_user_info_add_fri"
+            android:layout_width="fill_parent"
+            android:layout_height="45.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tt_default_btn_bk"
+            android:text="@string/tt_activity_user_info_add_fri"
+            android:textColor="@android:color/white"
+            android:textSize="19sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/tt_activity_user_info_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

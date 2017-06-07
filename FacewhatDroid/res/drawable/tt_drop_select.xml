@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <item 
+        android:drawable="@drawable/tt_drop_up" 
+        android:state_expanded="false"
+        android:drawingCacheQuality="auto"/>
+    
+    <item 
+        android:drawable="@drawable/tt_drop_down" 
+        android:state_expanded="true"
+        android:drawingCacheQuality="auto"/>
+
+</selector>

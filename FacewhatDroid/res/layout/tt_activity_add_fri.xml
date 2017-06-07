@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <com.chat.ui.widget.SearchEditText
+        android:id="@+id/tt_add_fri_find"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/tt_page_item_bk"
+        android:drawableLeft="@drawable/tt_search"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/add_fri_msg"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/default_key_color" >
+
+        <requestFocus />
+    </com.chat.ui.widget.SearchEditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tt_add_fri_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/add_fri_find_contact"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/tt_add_fri_group"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/add_fri_find_group"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tt_activity_add_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="0dp" />
+
+</LinearLayout>

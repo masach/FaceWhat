@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/tt_default_btn_bk"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/tt_pop_user_info_note"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tt_top_search_bg"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/tt_activity_add_fri_note"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/default_key_color" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tt_pop_user_info_last"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/tt_activity_user_info_last"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/tt_pop_user_info_next"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/tt_activity_user_info_next"
+                android:textColor="@android:color/black" />
+            
+        </LinearLayout>
+
+</LinearLayout>

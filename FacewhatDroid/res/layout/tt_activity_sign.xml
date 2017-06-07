@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/tt_sign"
+        android:textSize="30dp" />
+
+    <!-- android:ems="10"控制显示的长度，超过18将不显示 -->
+
+    <EditText
+        android:id="@+id/tt_sign_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textfield_focused_holo_dark"
+        android:ems="11"
+        android:hint="@string/tt_sign_input_account"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/tt_sign_pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textfield_focused_holo_dark"
+        android:ems="11"
+        android:hint="@string/tt_sign_input_pwd1"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/tt_sign_pwd2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textfield_focused_holo_dark"
+        android:ems="11"
+        android:hint="@string/tt_sign_input_pwd2"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tt_sign_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Red"/>
+        
+        <Button
+            android:id="@+id/tt_sign_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/tt_sign_submit" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="50dp"/>
+</LinearLayout>

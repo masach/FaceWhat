@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 加入在SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 加入在SDCard中创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!--
+largeHeap="true" 内存分配 为true时可能 使用256M(我的设备)可以通过ActivityManager.getMemoryClass()获取，
+为false可使用内存为64
+    -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.chat" />
+
+    <application
+        android:name="com.chat.IM"
+        android:allowBackup="true"
+        android:icon="@drawable/company"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <uses-library android:name="android.test.runner" />
+
+        <!--
+        android:enabled:Android系统是否能够实例化该应用程序的组件，如果为true，
+        	每个组件的enabled属性决定那个组件是 否可以被 enabled。如果为false，
+        	它覆盖组件指定的值；所有组件都是disabled。 
+        android:exported:exported是否其它应用组件能调用这个service或同它交互
+        	-如果能则为true，否则为false。当值为false时   ，只有同一个应用的组件或有相同
+        	用户ID的应用能启动这个服务或绑定它。        -->
+        <service
+            android:name="com.chat.IMService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":push"/>
+        <!--  -->
+        <!-- <receiver android:name="com.chat.broadcast.BroadcastReceiverMsg" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.chat.broadcast.BroadcastReceiverMsg" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <receiver android:name="com.chat.broadcast.BroadcastNet" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.chat.db.provider.ContactProvider"
+            android:authorities="com.chat.db.provider.ContactProvider"
+            android:exported="true" />
+        <provider
+            android:name="com.chat.db.provider.SMSProvider"
+            android:authorities="com.chat.db.provider.SMSProvider"
+            android:exported="true" />
+        <provider
+            android:name="com.chat.db.provider.PresenceProvider"
+     		android:authorities="com.chat.db.provider.PresenceProvider"
+            android:exported="true" />
+        <provider
+            android:name="com.chat.db.provider.DeptProvider"
+     		android:authorities="com.chat.db.provider.DeptProvider"
+            android:exported="true" />
+
+        <activity
+            android:name="com.chat.ui.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+       screenOrientation="portrait"  切换屏幕屏幕始终与竖形式显示
+       configChanges="orientation|keyboardHidden"当横竖屏切换时
+       		会直接调用onCreate中的onConfigurationChanged()方法，而不是重新执行onCreate(),
+       		如果没有的话就会重新执行onCreate();        -->
+        <activity
+            android:name="com.chat.ui.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chat.ui.WelcomeActivity"
+            android:screenOrientation="portrait" >
+
+<!--             <intent-filter> -->
+<!--             <action android:name="android.intent.action.MAIN" /> -->
+
+
+<!--             <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.chat.ui.SignActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.ChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.MySetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.FileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chat.ui.FindActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

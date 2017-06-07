@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/contact_list_item_bk"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/tt_fragment_search_pro"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tt_fragment_search_no_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/search_result"
+        android:textColor="#ABABAB" />
+
+    <ListView
+        android:id="@+id/tt_fragment_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:divider="@color/Gray"
+        android:dividerHeight="1dip" />
+
+</LinearLayout>

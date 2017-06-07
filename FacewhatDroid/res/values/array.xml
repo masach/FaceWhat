@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_photo_items">
+        <item >拍照</item>
+        <item >相册选择</item>
+    </string-array>
+    
+     <string-array name="select_presence_status">
+        <item >Q我吧</item>
+        <item >在线</item>
+        <item >离开</item>
+        <item >隐身</item>
+        <item >请勿打扰</item>
+        
+    </string-array>
+</resources>

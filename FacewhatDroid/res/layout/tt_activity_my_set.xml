@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/tt_activity_my_picList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:verticalSpacing="2dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="178.5dp">
+
+            <com.chat.ui.widget.ImageViewCircle
+                android:id="@+id/tt_activity_my_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/tt_activity_my_icon"
+                android:layout_alignRight="@+id/tt_activity_my_icon"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/tt_mine_item_bg_pressed"
+                android:gravity="center"
+                android:text="@string/tt_my_info_hint"
+                android:textColor="@color/Black"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contact_list_item_bk"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:shrinkColumns="1" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_my_info_jid"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tt_activity_my_jid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_my_info_name"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tt_activity_my_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/tt_activity_my_modify"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/set"
+                    android:padding="3dip" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_my_info_email"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tt_activity_my_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow
+                android:id="@+id/phoneArea"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_my_info_phone"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tt_activity_my_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/default_line_color" />
+
+            <TableRow
+                android:id="@+id/emailArea"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_height="45dp"
+                    android:layout_column="1"
+                    android:gravity="left|center_vertical"
+                    android:padding="3dip"
+                    android:text="@string/tt_my_info_address"
+                    android:textColor="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/tt_activity_my_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:padding="3dip"
+                    android:singleLine="true"
+                    android:textColor="@color/default_value_color"
+                    android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/tt_activity_my_save"
+            android:layout_width="fill_parent"
+            android:layout_height="45.5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/tt_default_btn_bk"
+            android:text="@string/tt_my_info_save"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/tt_activity_my_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -7,7 +7,7 @@
 
  
  ### Contributors
- - Masa, Originator, Faculty of [FJUT(China)](http://sise.fjut.edu.cn/), [Blog](http://blog.csdn.net/shineych) 
+ - Masa, Originator, [Blog](http://blog.csdn.net/shineych) 
  - LinXingYang, Major in FaceWhatMl5, Student Of Lab 515, [Blog](http://blog.csdn.net/jkl852qaz)
  - ZouXiaoLong, Major in FaceWhatDroid, Student Of Lab 515
  - SongWei, UC veteran 

@@ -1,3 +1,6 @@
+/**
+ * IM主面板
+ */
 
 (function(factory) {
 	return factory(XoW);

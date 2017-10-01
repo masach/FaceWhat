@@ -1,3 +1,7 @@
+/**
+ * 界面操作下发
+ */
+
 (function (factory) {
     // 暂时不用amd那个东西，因为还不知道那个的具体用处
     window.XoW = factory(Strophe);

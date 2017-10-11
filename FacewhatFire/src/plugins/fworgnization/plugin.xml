@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+    <!-- Main plugin class -->
+    <class>com.facewhat.FWPlugin</class>
+    
+    <!-- Plugin meta-data -->
+    <name>企业通讯录管理</name>
+    <description>实现企业通讯录.</description>
+    <author>lxy</author>
+    <version>1.0.0</version>
+    <date>04/11/2017</date>
+    <minServerVersion>3.4.0</minServerVersion>
+    <!--配置数据库文件的名称，如  fwarchive 则在database中就是  fwarchive_mysq.sql
+    fwarchive_oracle.sql 等
+    <databaseKey>fwarchive</databaseKey>
+    <databaseVersion>2</databaseVersion>
+    <licenseType>gpl</licenseType>
+    -->
+    
+</plugin>
+ 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin>
+    <class>com.ahelloworld.HelloWorldPlugin</class>
+    <name>aHelloWorld</name>
+    <description>这是个hellowWorld测试插件</description>
+    <author>linxingyang</author>
+    <version>1.0.0</version>
+    <date>3/29/2017</date>
+    <minServerVersion>4.0.0</minServerVersion>
+</plugin>

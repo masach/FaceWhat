@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+    <!-- Main plugin class -->
+    <class>com.facewhat.fwprintstanza.PrintStanzaPlugin</class>
+    
+    <!-- Plugin meta-data -->
+    <name>Face What Print Stanza</name>
+    <description>my tool.</description>
+    <author>林兴洋</author>
+    <version>1.0.0</version>
+    <date>04/3/2017</date>
+    <minServerVersion>3.4.0</minServerVersion>
+    <!--配置数据库文件的名称，如  fwarchive 则在database中就是  fwarchive_mysq.sql
+    fwarchive_oracle.sql 等
+    -->
+    
+</plugin>
+ 
